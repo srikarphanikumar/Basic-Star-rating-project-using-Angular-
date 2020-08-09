@@ -1,0 +1,11 @@
+.star-container {
+  display: inline-block;
+}
+.poly-class {
+  &:hover {
+    fill: yellow;
+  }
+}
+.reset {
+  padding: 10px;
+}

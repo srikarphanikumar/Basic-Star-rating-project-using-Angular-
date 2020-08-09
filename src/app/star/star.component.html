@@ -1,0 +1,13 @@
+<div *ngFor="let star of numberOfStars; let i = index" class="star-container">
+	<svg class="star-rating-blank" height="55px" width="53px" viewBox="0 0 25 23"         data-rating="1">
+		<polygon 
+      class="poly-class" 
+      stroke-width="0" 
+      points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+			[attr.fill]="starArray[i].color" 
+      (click)="storeInfo(i)" />
+	</svg>
+</div>
+<div class="reset">
+	<button (click)="resetColors()">Reset Colors</button>
+</div>
